@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cabecalho">
+        <img src="imagens/OIG2.jpg" width="200" height="150"> 
+        <div class="text">
+            <p1>Bem vindo ao site Trilhas historicas </p1><br>  
+            <input id="search" autocapitalize="none" autocomplete="off" autocorrect="off" name="search_query" tabindex="0" type="text" spellcheck="false" placeholder="Pesquisar" aria-label="Pesquisar" role="combobox" aria-haspopup="false" aria-autocomplete="list" class="gsfi ytd-searchbox" dir="ltr" >
+
+            <img src="imagens/search-interface-symbol.png" width="30" height="30" id="lupa">
+            
+        </div>
+        <script>
+        function pesquisarArtigo() {
+            // Obter o valor do campo de pesquisa
+            var termoPesquisa = document.getElementById("search").value.toLowerCase();
+            console.log(termoPesquisa)
+            // Verificar se o termo de pesquisa é "Artigo 1"
+            if (termoPesquisa === "artigo 1") {
+                // Redirecionar para a página do Artigo 1
+                window.location.href = "page1.html";
+            }
+            // Verificar se o termo de pesquisa é "Artigo 2"
+            else if (termoPesquisa === "artigo 2") {
+                // Redirecionar para a página do Artigo 2
+                window.location.href = "page2.html";
+            } else {
+                // Tratar outros casos (por exemplo, exibir mensagem de erro)
+                alert("Artigo não encontrado.");
+            }
+        }
+
+        // Adicionar um listener para a tecla Enter no campo de pesquisa
+        document.getElementById("search").addEventListener("keyup", function(event) {
+            // Verificar se a tecla pressionada é Enter (código 13)
+            if (event.keyCode === 13) {
+                // Chamar a função de pesquisa
+                pesquisarArtigo();
+            }
+        });
+
+    </script>
+        <a href="index.html" ><button class="button">inicio</button></a>
+        <a href="page1.html" ><button class="button">Artigo 1</button></a>
+        <a href="page2.html" ><button class="button">Artigo 2</button></a>
+        </div>
+       
+        
+       
+        
+    </div>
+    <div id="menu">
+        <a href="https://www.markingstore.com.br/smart-watch-relogio-inteligente-aprova-dagua-via-bluetooth-com-pulseira-colorida/p"><img src="imagens/smart-watch-iwo-8-relogio-inteligente-com-pulseira-colorida-aprova-dagua-via-bluetooth-preto-65f484b932606-large(2).jpg" width="350" height="500"></a>
+
+    </div>
+    <div id="conteudo">
+        <div class="texto">
+            Bem-vindo ao nosso site, onde exploramos um dos períodos mais significativos da história moderna: a Segunda Guerra Mundial. Aqui, mergulharemos nas complexidades, nas histórias e nos eventos que moldaram o mundo entre 1939 e 1945. A Segunda Guerra Mundial foi um ponto de viragem global que definiu o século XX e deixou um legado duradouro que ainda influencia nossas sociedades hoje. Prepare-se para descobrir os bastidores, os protagonistas e os desdobramentos deste conflito que mudou o curso da humanidade.
+        </div>
+        <img src="imagens/effe57cb-94e6-4852-a506-e8a464a63fea.jpg" width="400" height="250">
+    </div>
+    <div id="lado">
+        <a href="https://br.1xbet.com/"><img src="imagens/download.png" width="330" height="500"></a>
+    </div>
+    <div id="rodape">
+       <a href="https://blaze1.space/pt/"><img src="imagens/download (1).png" width="1300" height="90"></a> 
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+#cabecalho{
+    height: 150px;
+    background-color: #c2c1c1;
+    width: 95%;
+    margin: 0 auto;
+
+}
+#menu{
+    height: 500px;
+    width: 300px;
+    background-color: #f0f0f0;
+    float: left;
+    margin-left: 37px;
+    margin-top: 10px;
+}
+#conteudo{
+    width: 800px;
+    height: 480px;
+    background-color: #f0f0f0;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(232, 232, 207);;
+    
+}
+.texto{
+    margin-top: 10px;
+    font-size: 25px;
+}
+#lado{
+    height: 500px;
+    width: 330px;
+    background-color: #f0f0f0;
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-block-end: 5px;
+}
+#rodape{
+  margin-left: 100px;
+}
+.text{
+    text-align: center;
+    margin-top: -10%;
+}
+#search{
+    border-radius: 10px;
+    width: 360px;
+    height: 21px;
+    
+}
+#lupa{
+   margin-top: 5px;
+}
+.button {
+    background-color: rgb(182, 182, 163); /* Green */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 250px;
+    margin-top: 32px;
+    width: 120px;
+    height: 40px;
+    margin-right: -220px;
+    
+  }
+  

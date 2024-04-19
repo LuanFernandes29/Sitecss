@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles1.css" media="screen">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cabecalho">
+        <img src="imagens/OIG2.jpg" width="200" height="150"> 
+        <div class="text">
+            <p1>Artigo 1: contexto historico </p1><br>  
+            <input id="search" autocapitalize="none" autocomplete="off" autocorrect="off" name="search_query" tabindex="0" type="text" spellcheck="false" placeholder="Pesquisar" aria-label="Pesquisar" role="combobox" aria-haspopup="false" aria-autocomplete="list" class="gsfi ytd-searchbox" dir="ltr" >
+
+            <img src="imagens/search-interface-symbol.png" width="30" height="30" id="lupa">
+            
+        </div>
+        <script>
+        function pesquisarArtigo() {
+            // Obter o valor do campo de pesquisa
+            var termoPesquisa = document.getElementById("search").value.toLowerCase();
+            console.log(termoPesquisa)
+            // Verificar se o termo de pesquisa é "Artigo 1"
+            if (termoPesquisa === "inicio") {
+                // Redirecionar para a página do Artigo 1
+                window.location.href = "index.html";
+            }
+            // Verificar se o termo de pesquisa é "Artigo 2"
+            else if (termoPesquisa === "artigo 2") {
+                // Redirecionar para a página do Artigo 2
+                window.location.href = "page2.html";
+            } else {
+                // Tratar outros casos (por exemplo, exibir mensagem de erro)
+                alert("Artigo não encontrado.");
+            }
+        }
+
+        // Adicionar um listener para a tecla Enter no campo de pesquisa
+        document.getElementById("search").addEventListener("keyup", function(event) {
+            // Verificar se a tecla pressionada é Enter (código 13)
+            if (event.keyCode === 13) {
+                // Chamar a função de pesquisa
+                pesquisarArtigo();
+            }
+        });
+        </script>
+        <a href="index.html"><button class="button">inicio</button></a>
+        <a href="page1.html"><button class="button">Artigo 1</button></a>
+        <a href="page2.html"><button class="button">Artigo 2</button></a>
+       
+        
+       
+        
+    </div>
+    <div id="menu">
+        <div class="texto">
+       <p1>contexto pré guerra</p1> <br>
+       <h3 class="texto_pequeno">Tratado de Versalhes e Ascensão do Nazismo: Após a Primeira Guerra Mundial, o Tratado de Versalhes (1919) impôs duras sanções à Alemanha. O descontentamento social e econômico no país levou ao surgimento do Partido Nazista e à ascensão de Adolf Hitler ao poder em 1933.
+        Expansionismo Japonês: No Extremo Oriente, o Japão estava expandindo seu império, conquistando territórios na China e no Sudeste Asiático, gerando tensões com os Estados Unidos e outras potências ocidentais.
+        Política de Apaziguamento: As tentativas de apaziguamento das potências europeias frente às crescentes ambições expansionistas da Alemanha e Itália foram em vão, culminando com a invasão da Polônia pela Alemanha em setembro de 1939.</h3>
+    </div>
+
+    </div>
+    <div id="conteudo">
+        <div class="texto">
+            Fases da Guerra: <br>
+
+            Invasão da Polônia (1939): A Alemanha Nazi e a União Soviética invadiram a Polônia, desencadeando a guerra na Europa.
+            Blitzkrieg e Queda da França (1940): A estratégia de guerra-relâmpago da Alemanha resultou na rápida queda da França, seguida pela Batalha da Grã-Bretanha, onde a Royal Air Force repeliu os ataques aéreos alemães.
+            Invasão da União Soviética (1941): Hitler quebrou o Pacto Molotov-Ribbentrop e invadiu a União Soviética. Isso marcou uma mudança crucial na guerra, levando a uma frente oriental massiva e brutal.
+            Pearl Harbor e Guerra no Pacífico (1941): O Japão atacou Pearl Harbor em dezembro de 1941, levando os Estados Unidos a entrarem na guerra. Isso desencadeou uma série de batalhas no Teatro do Pacífico.
+            Batalhas Decisivas (1942-1943): Batalhas como Stalingrado (1942-1943), El Alamein e Midway (1942) foram pontos de viragem cruciais, com as forças do Eixo sofrendo reveses significativos.
+            Invasão da Normandia e Avanço Aliado (1944): O Dia D (6 de junho de 1944) marcou a invasão aliada na Normandia, levando à libertação da França e ao avanço em direção à Alemanha.
+            Rendição das Potências do Eixo (1945): A Alemanha se rendeu em maio de 1945, após a Batalha de Berlim, seguida pela rendição do Japão em setembro de 1945, após os bombardeios atômicos de Hiroshima e Nagasaki em agosto de 1945.      
+          </div>
+        
+           
+    </div>
+    <div id="lado">
+        <div class="texto">
+        Consequências e Legado: <br>
+
+        A Segunda Guerra Mundial resultou em enormes perdas humanas e econômicas, com milhões de mortos e vastas áreas devastadas.
+        A criação da Organização das Nações Unidas (ONU) em 1945 foi uma resposta à necessidade de evitar futuros conflitos.
+        A divisão do mundo em blocos capitalista e comunista durante a Guerra Fria foi um desdobramento direto da Segunda Guerra Mundial.
+        O Holocausto, o genocídio perpetrado pelos nazistas contra seis milhões de judeus e milhões de outros grupos étnicos, deixou uma cicatriz indelével na história mundial.
+    </div>
+    </div>
+    <div id="rodape">
+       <a href="https://blaze1.space/pt/"><img src="imagens/download (1).png" width="1300" height="90"></a> 
+    </div>
+</body>
+</html>
