@@ -13,37 +13,36 @@
             <p1>Bem vindo ao site Trilhas historicas </p1><br>  
             <input id="search" autocapitalize="none" autocomplete="off" autocorrect="off" name="search_query" tabindex="0" type="text" spellcheck="false" placeholder="Pesquisar" aria-label="Pesquisar" role="combobox" aria-haspopup="false" aria-autocomplete="list" class="gsfi ytd-searchbox" dir="ltr" >
 
-            <img src="imagens/search-interface-symbol.png" width="30" height="30" id="lupa">
+           <button onclick="pesquisarArtigo()"> <img  src="imagens/search-interface-symbol.png" width="30" height="30" id="lupa"> </button>
             
         </div>
         <script>
-        function pesquisarArtigo() {
-            // Obter o valor do campo de pesquisa
-            var termoPesquisa = document.getElementById("search").value.toLowerCase();
-            console.log(termoPesquisa)
-            // Verificar se o termo de pesquisa é "Artigo 1"
-            if (termoPesquisa === "artigo 1") {
-                // Redirecionar para a página do Artigo 1
-                window.location.href = "page1.html";
-            }
-            // Verificar se o termo de pesquisa é "Artigo 2"
-            else if (termoPesquisa === "artigo 2") {
-                // Redirecionar para a página do Artigo 2
-                window.location.href = "page2.html";
-            } else {
-                // Tratar outros casos (por exemplo, exibir mensagem de erro)
-                alert("Artigo não encontrado.");
-            }
-        }
+      function pesquisarArtigo() {
+    // Obter o valor do campo de pesquisa
+    var termoPesquisa = document.getElementById("search").value.toLowerCase();
 
-        // Adicionar um listener para a tecla Enter no campo de pesquisa
-        document.getElementById("search").addEventListener("keyup", function(event) {
-            // Verificar se a tecla pressionada é Enter (código 13)
-            if (event.keyCode === 13) {
-                // Chamar a função de pesquisa
-                pesquisarArtigo();
-            }
-        });
+    // Verificar se o termo de pesquisa é "artigo 1"
+    if (termoPesquisa === "artigo 1") {
+        // Redirecionar para a página do Artigo 1
+        window.location.href = "page1.html";
+    } else if (termoPesquisa === "artigo 2") {
+        // Redirecionar para a página do Artigo 2
+        window.location.href = "page2.html";
+    } else {
+        // Tratar outros casos (por exemplo, exibir mensagem de erro)
+        alert("Artigo não encontrado.");
+    }
+}
+    
+// Adicionar um listener para a tecla Enter no campo de pesquisa
+document.getElementById("search").addEventListener("keyup", function(event) {
+    // Verificar se a tecla pressionada é Enter (código 13)
+    if (event.keyCode === 13) {
+        // Chamar a função de pesquisa
+        pesquisarArtigo();
+    }
+});
+
 
     </script>
         <a href="index.html" ><button class="button">inicio</button></a>
